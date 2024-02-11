@@ -1,5 +1,3 @@
-import Clipboard from '@react-native-community/clipboard';
-
 /**
  * Tries to copy a given text to the clipboard.
  * Returns true if the action succeeds.
@@ -9,7 +7,7 @@ import Clipboard from '@react-native-community/clipboard';
  */
 export function copyText(textToCopy: string) {
     try {
-        Clipboard.setString(textToCopy);
+        console.log(textToCopy);
 
         return true;
     } catch (e) {
